@@ -11,14 +11,9 @@
 #define GREEN 33
 #define LDR 34
 #define BUTTON 27
-<<<<<<< HEAD
 
 #define light analogRead(LDR)
 
-=======
-#define LIGHT analogread(LDR)
-int cnt = 1;
->>>>>>> traffic
 int state = 1;
 int count = 0;
 Bounce debouncer = Bounce();
@@ -38,15 +33,11 @@ void setup()
   delay(200);
   // start LED with GREEN and POST to database
   digitalWrite(GREEN, 1);
-<<<<<<< HEAD
   // Serial.println("green na");
   POST_traffic("green");
   GET_traffic();
   digitalWrite(YELLOW, 0);
   digitalWrite(RED, 0);
-=======
-  POST_traffic("GREEN");
->>>>>>> traffic
 }
 
 void loop()
