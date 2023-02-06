@@ -79,11 +79,11 @@ void loop()
     POST_traffic("red");
     GET_traffic();
     state += 1;    
+    delay (5000);
   }
   else if (state == 3)
   {
     // while led RED
-    delay (5000);
     if (light < 3000)
     {
       digitalWrite(GREEN, 1);
